@@ -16,7 +16,7 @@ const change_theme = () => {
     localStorage.setItem('theme', 'dark');
     $('.social-links-logo').addClass('p-1');
     $('.project-heading').css({"text-shadow": "3px 4px 7px rgba(81,67,21,0.8)"})
-    $('.profile-img')[0].src = '/public/content/dp.png'
+    $('.profile-img')[0].src = '/content/dp.png'
     // toggle.setAttribute("aria-label", "Toggle Dark Theme");
   } else {
     toggle.childNodes[1].setAttribute("data-icon", "ri:moon-fill");
@@ -30,7 +30,7 @@ const change_theme = () => {
     $('.social-links-logo').removeClass('p-1')
     localStorage.setItem('theme', 'light');
     $('.project-heading').css({"text-shadow": "none"})
-    $('.profile-img')[0].src = '/public/content/dp.png'
+    $('.profile-img')[0].src = '/content/dp.png'
     // toggle.setAttribute("aria-label", "Toggle Light Theme");
   }
 };
